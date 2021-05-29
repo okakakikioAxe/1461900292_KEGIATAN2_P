@@ -1,12 +1,12 @@
 @extends('template.data_0292')
 
-@section('judul','data buku')
+@section('judul','detail pinjam')
 
-@section('nama_tabel','ms_buku')
+@section('nama_tabel','ms_detail_pinjam')
 
-@section('placeholder','cari kode buku')
+@section('placeholder','cari kode peminjaman')
 
-@section('judul_tabel','list buku')
+@section('judul_tabel','list detail pinjam')
 
 @section('tabel')
     <table class="table table-striped">
