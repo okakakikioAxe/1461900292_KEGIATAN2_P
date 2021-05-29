@@ -11,7 +11,7 @@
         <br>
         <br>
         <h6>Tampilkan sigle data</h6>
-        <a href="">
+        <a href="{{url('/data/buku')}}">
             <button type="button" class="btn btn-primary" style="width: 120px;height: auto;">Single Data</button>
         </a>
         <br>
