@@ -44,7 +44,7 @@
               <li><a class="dropdown-item" href="{{ url('/data/kategori') }}">Kategori</a></li>
               <li><a class="dropdown-item" href="{{ url('/data/peminjam') }}">Peminjam</a></li>
               <li><a class="dropdown-item" href="{{ url('/data/peminjaman') }}">Peminjaman</a></li>
-              <li><a class="dropdown-item" href="{{ url('/data/pemerbit') }}">Penerbit</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/penerbit') }}">Penerbit</a></li>
               <li><a class="dropdown-item" href="{{ url('/data/petugas') }}">Petugas</a></li>
               
             </ul>
