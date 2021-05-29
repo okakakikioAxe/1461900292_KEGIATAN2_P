@@ -23,6 +23,9 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Data</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Multiple Data</a>
+                  </li>
                 </ul>
               </div>
             </div>
