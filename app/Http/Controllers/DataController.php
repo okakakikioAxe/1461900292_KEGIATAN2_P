@@ -102,6 +102,14 @@ class DataController extends Controller
         
     }
 
+    public function join(){
+        $data = DB::table('ms_buku')
+            ->leftJoin('ms_penerbit', 'ms_buku.kode_penerbit', '=', 'ms_penerbit.kode_penerbit')
+            ->get();
+        $header = ['kode buku','nama buku','kode penerbit','nama penerbit'];
+        return view('join_0292',['header'=>$header,'data'=>$data]);
+    }
+
 
     
 }
