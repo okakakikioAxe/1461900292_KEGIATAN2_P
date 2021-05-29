@@ -10,9 +10,9 @@
     <div class="container text-center">
         <br>
         <br>
-        <h6>Tampilkan sigle data</h6>
+        <h6>Tampilkan data tabel</h6>
         <a href="{{url('/data/buku')}}">
-            <button type="button" class="btn btn-primary" style="width: 120px;height: auto;">Single Data</button>
+            <button type="button" class="btn btn-primary" style="width: 120px;height: auto;">Data</button>
         </a>
         <br>
         <br>
@@ -20,9 +20,9 @@
         <h6>atau</h6>
         <br>
         <br>
-        <h6>Tampilkan multiple data</h6>
-        <a href="">
-            <button type="button" class="btn btn-primary" style="width: 120px;height: auto;">Multiple Data</button>
+        <h6>Tampilkan data buku dan penerbit</h6>
+        <a href="{{ url('/data/join') }}">
+            <button type="button" class="btn btn-primary" style="width: 120px;height: auto;">Data Buku</button>
         </a>
     </div>
 @endsection
