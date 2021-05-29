@@ -3,8 +3,12 @@
 @section('judul','data')
 @section('konten')
 <br>
+<div class="container">
+    <a href="{{ url('/data/join') }}">
+        <button type="button" class="btn btn-info">Data Buku</button>
+    </a>
+</div>
 <br>
-
 <div class="container">
     <table class="table table-striped">
         <thead class=" table-dark position-sticky">
