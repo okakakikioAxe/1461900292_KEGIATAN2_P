@@ -13,6 +13,7 @@ class PageController extends Controller
 
     public function data(){
        $buku = DB::table('ms_buku')->get();
-       return view('singleData_0292',['$data'=>$buku]);
+       $header = ['kd buku','kd kategori','kd penerbit','judul','jumlah','pengarang','thn terbit'];
+       return view('singleData_0292',[$header=>'$header',$buku'=>$buku]);
     }
 }
