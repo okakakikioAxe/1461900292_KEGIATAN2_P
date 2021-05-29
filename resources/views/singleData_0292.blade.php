@@ -10,8 +10,8 @@
               Tampilkan Tabel
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="https://www.google.com">Google</a></li>
-              <li><a class="dropdown-item" href="https://www.facebook.com">Facebook</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/buku') }}">Buku</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/detail_pinjam') }}">Detail Pinjam</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
