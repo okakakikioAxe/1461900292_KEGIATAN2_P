@@ -53,7 +53,7 @@
     <br>
     
 
-        <form class="d-flex" action="{{ url('/data/cari')}}">
+        <form class="d-flex" action="{{ url('/data/cari')}}" method="GET">
         {{ csrf_field() }}
             <div class="container">
                 <div class="row">
@@ -61,8 +61,8 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input type="hidden" id="nama_tabel" value="@yield('nama_tabel')">
-                        <input class="form-control me-2" type="search" placeholder= "@yield('placeholder')" aria-label="Search" id="kode">
+                        <input type="hidden" name="nama_tabel" id="nama_tabel" value="@yield('nama_tabel')">
+                        <input class="form-control me-2" type="search" placeholder= "@yield('placeholder')" aria-label="Search" name="kode" id="kode">
                     </div>
                     <div class="col">
                         <button class="btn btn-outline-success" type="submit">Search</button>

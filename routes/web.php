@@ -25,3 +25,5 @@ Route::get('/data/peminjam', [DataController::class,'ms_peminjam']);
 Route::get('/data/peminjaman', [DataController::class,'ms_peminjaman']);
 Route::get('/data/penerbit', [DataController::class,'ms_penerbit']);
 Route::get('/data/petugas', [DataController::class,'ms_petugas']);
+
+Route::get('/data/cari', [DataController::class,'cari']);

@@ -64,6 +64,41 @@ class DataController extends Controller
             $header = ['kd buku','kd kategori','kd penerbit','judul','jumlah','pengarang','thn terbit'];
             return view('buku_0292',['header'=>$header,'data'=>$data]);
         }
+        if($tabel == 'ms_detail_pinjam'){
+            $data = DB::table($tabel)->where('kode_peminjaman',$kode)->get();
+            $header = ['kd peminjaman','kd buku','tgl kembali','denda','status kembali'];
+        return view('detail_pinjam_0292',['header'=>$header,'data'=>$data]);
+        }
+        if($tabel == 'ms_kartu_pendaftaran'){
+            $data = DB::table($tabel)->where('kode_kartu',$kode)->get();
+            $header = ['kd kartu','kd petugas','kd peminjam','tgl pembuatan','tgl akhir','status aktif'];
+        return view('kartu_pendaftaran_0292',['header'=>$header,'data'=>$data]);
+        }
+        if($tabel == 'ms_kategori'){
+            $data = DB::table($tabel)->where('kode_kategori',$kode)->get();
+            $header = ['kode kategori','nama kategori'];
+        return view('kategori_0292',['header'=>$header,'data'=>$data]);
+        }
+        if($tabel == 'ms_peminjam'){
+            $data = DB::table($tabel)->where('kode_peminjam',$kode)->get();
+            $header = ['kd peminjam','nama peminjam','alamat peminjam','telp peminjam'];
+        return view('peminjam_0292',['header'=>$header,'data'=>$data]);
+        }
+        if($tabel == 'ms_peminjaman'){
+            $data = DB::table($tabel)->where('kode_peminjaman',$kode)->get();
+            $header = ['kd peminjaman','kd petugas','kd peminjam','tgl peminjaman','tgl kembali'];
+        return view('peminjaman_0292',['header'=>$header,'data'=>$data]);
+        }
+        if($tabel == 'ms_penerbit'){
+            $data = DB::table($tabel)->where('kode_penerbit',$kode)->get();
+            $header = ['kd penerbit','nama penerbit','alamat penerbit','telp penerbit'];
+            return view('penerbit_0292',['header'=>$header,'data'=>$data]);
+        }
+        if($tabel == 'ms_petugas'){
+            $data = DB::table($tabel)->where('kode_petugas',$kode)->get();
+            $header = ['kd petugas','nama petugas'];
+        return view('petugas_0292',['header'=>$header,'data'=>$data]);
+        }
         
     }
 
