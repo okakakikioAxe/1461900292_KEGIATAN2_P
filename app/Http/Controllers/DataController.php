@@ -18,4 +18,44 @@ class DataController extends Controller
         $header = ['kd peminjaman','kd buku','tgl kembali','denda','status kembali'];
         return view('detail_pinjam_0292',['header'=>$header,'data'=>$data]);
     }
+
+    public function ms_kartu_pendaftaran(){
+        $data = DB::table('ms_kartu_pendaftaran')->get();
+        $header = ['kd kartu','kd petugas','kd peminjam','tgl pembuatan','tgl akhir','status aktif'];
+        return view('kartu_pendaftaran_0292',['header'=>$header,'data'=>$data]);
+    }
+
+    public function ms_kategori(){
+        $data = DB::table('ms_kategori')->get();
+        $header = ['kode kategori','nama kategori'];
+        return view('kategori_0292',['header'=>$header,'data'=>$data]);
+    }
+
+    public function ms_peminjam(){
+        $data = DB::table('ms_peminjam')->get();
+        $header = ['kd peminjam','nama peminjam','alamat peminjam','telp peminjam'];
+        return view('peminjam_0292',['header'=>$header,'data'=>$data]);
+    }
+
+    public function ms_peminjaman(){
+        $data = DB::table('ms_peminjaman')->get();
+        $header = ['kd peminjaman','kd petugas','kd peminjam','tgl peminjaman','tgl kembali'];
+        return view('peminjaman_0292',['header'=>$header,'data'=>$data]);
+    }
+
+    public function ms_penerbit(){
+        $data = DB::table('ms_penerbit')->get();
+        $header = ['kd penerbit','nama penerbit','alamat penerbit','telp penerbit'];
+        return view('penerbit_0292',['header'=>$header,'data'=>$data]);
+    }
+
+    public function ms_petugas(){
+        $data = DB::table('ms_petugas')->get();
+        $header = ['kd petugas','nama petugas'];
+        return view('petugas_0292',['header'=>$header,'data'=>$data]);
+    }
+
+
+
+    
 }
