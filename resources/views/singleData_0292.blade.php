@@ -40,10 +40,10 @@
                 
                 <thead class=" table-dark position-sticky">
                     <tr>
-                        <th>No</th>
-                        <th>First</th>
-                        <th>Last</th>
-                        <th>Handle</th>
+                        <?php $index = 0?>
+                        @foreach ($header as $h)
+                            <th>{{ $h[$index] }}</th>
+                        @endforeach
                     </tr>
                 </thead>
                 <tbody>
