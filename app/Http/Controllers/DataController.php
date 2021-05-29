@@ -56,6 +56,17 @@ class DataController extends Controller
     }
 
 
+    public function cari(Request $request){
+        $tabel = $request->nama_tabel;
+        $kode = $request->kode;
+        if($tabel == 'ms_buku'){
+            $data = DB::table($tabel)->where('kode_buku',$kode)->get();
+            $header = ['kd buku','kd kategori','kd penerbit','judul','jumlah','pengarang','thn terbit'];
+            return view('buku_0292',['header'=>$header,'data'=>$data]);
+        }
+        
+    }
+
 
     
 }
