@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class,'home']);
 
 Route::get('/data/buku', [DataController::class,'ms_buku']);
-
+Route::get('/data/detail_pinjam', [DataController::class,'ms_detail_pinjam']);
