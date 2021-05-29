@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\DataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class,'home']);
 
-Route::get('/data', [PageController::class,'data']);
+Route::get('/data/buku', [DataController::class,'ms_buku']);
+
