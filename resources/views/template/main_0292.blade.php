@@ -24,7 +24,7 @@
                     <a class="nav-link active" aria-current="page" href="{{url('/data/buku')}}">Data</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Multiple Data</a>
+                    <a class="nav-link active" aria-current="page" href="{{url('/data/join')}}">Data Buku</a>
                   </li>
                 </ul>
               </div>
