@@ -54,7 +54,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-
+                        <input type="hidden" id="nama_tabel" value="@yield('nama_tabel')">
                         <input class="form-control me-2" type="search" placeholder= "@yield('placeholder')" aria-label="Search">
                     </div>
                     <div class="col">
