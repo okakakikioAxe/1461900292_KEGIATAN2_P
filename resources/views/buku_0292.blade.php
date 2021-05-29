@@ -2,6 +2,8 @@
 
 @section('judul','data buku')
 
+@section('nama_tabel','ms_buku')
+
 @section('placeholder','cari kode buku')
 
 @section('judul_tabel','list buku')
