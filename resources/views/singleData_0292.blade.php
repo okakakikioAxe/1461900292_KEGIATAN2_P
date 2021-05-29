@@ -56,7 +56,7 @@
                 <tbody>
                 @foreach ($data as $data)
                     <tr>
-                            <th>{{ $data->kode_buku }}</th>
+                            <th>{{ $data->0 }}</th>
                             <th>{{ $data->kode_kategori }}</th>
                             <th>{{ $data->kode_penerbit }}</th>
                             <th>{{ $data->judul_buku }}</th>

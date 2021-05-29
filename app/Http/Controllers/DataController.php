@@ -13,7 +13,8 @@ class DataController extends Controller
        $nama_tabel = ['ms_buku'];
        $judul_list=['list buku'];
        $judul_search=['masukkan kode buku'];
-       return view('singleData_0292',['header'=>$header,'data'=>$buku, 'judul' => $judul_list, 'search'=>$judul_search, 'tabel'=> $nama_tabel]);
+       $nama_field = ['kode_buku','kode_kategori','kode_penerbit','judul_buku','pengarang_buku','tahun_terbit_buku'];
+       return view('singleData_0292',['header'=>$header,'data'=>$buku, 'judul' => $judul_list, 'search'=>$judul_search, 'tabel'=> $nama_tabel, 'field'=>$nama_field]);
     }
 
     public function ms_detail_pinjam(){
