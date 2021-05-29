@@ -26,7 +26,10 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input class="form-control me-2" type="search" placeholder="masukkan kode buku" aria-label="Search">
+                        @foreach ($search as $search)
+                            <input class="form-control me-2" type="search" placeholder="{{ $search }}" aria-label="Search">
+                        @endforeach
+                        
                     </div>
                     <div class="col">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -35,24 +38,33 @@
         </form>
     <br>
         <div class=" table-responsive ">
-            <caption>List of users</caption>
+            <caption>
+                @foreach ($judul as $judul)
+                {{ $judul }}
+                @endforeach
+            </caption>
             <table class="table table-striped">
                 
                 <thead class=" table-dark position-sticky">
                     <tr>
-                        <?php $index = 0?>
+                        
                         @foreach ($header as $h)
-                            <th>{{ $h[$index] }}</th>
+                            <th>{{ $h }}</th>
                         @endforeach
                     </tr>
                 </thead>
                 <tbody>
+                @foreach ($data as $data)
                     <tr>
-                        <th>1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                            <th>{{ $data->kode_buku }}</th>
+                            <th>{{ $data->kode_kategori }}</th>
+                            <th>{{ $data->kode_penerbit }}</th>
+                            <th>{{ $data->judul_buku }}</th>
+                            <th>{{ $data->jumlah_buku }}</th>
+                            <th>{{ $data->pengarang_buku }}</th>
+                            <th>{{ $data->tahun_terbit_buku }}</th>
                     </tr>     
+                @endforeach
                 </tbody>
             </table>
         </div>
