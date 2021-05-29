@@ -40,7 +40,13 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="{{ url('/data/buku') }}">Buku</a></li>
               <li><a class="dropdown-item" href="{{ url('/data/detail_pinjam') }}">Detail Pinjam</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/kartu_pendaftaran') }}">Kartu Pendaftaran</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/kategori') }}">Kategori</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/peminjam') }}">Peminjam</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/peminjaman') }}">Peminjaman</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/pemerbit') }}">Penerbit</a></li>
+              <li><a class="dropdown-item" href="{{ url('/data/petugas') }}">Petugas</a></li>
+              
             </ul>
         </div>
     </div>
