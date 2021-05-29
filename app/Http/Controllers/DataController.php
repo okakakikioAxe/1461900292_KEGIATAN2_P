@@ -110,6 +110,16 @@ class DataController extends Controller
         return view('join_0292',['header'=>$header,'data'=>$data]);
     }
 
+    public function join_where(){
+        $data = DB::table('ms_buku')
+                        ->join('ms_kategori', function ($join) {
+                            $join->on('ms_buku.kode_kategori', '=', 'ms_kategori.kode_kategori')
+                        ->where('ms_buku.kode_kategori', '!=', 'K001');
+                        })
+                        ->get();
+        $header = ['kode buku','nama buku','kode kategori','nama kategori'];
+        return view('join_where_0292',['header'=>$header,'data'=>$data]);
+    }
 
     
 }
