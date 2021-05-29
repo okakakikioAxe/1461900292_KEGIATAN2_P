@@ -11,7 +11,7 @@ class DataController extends Controller
         $buku = DB::table('ms_buku')->get();
         $header = ['kd buku','kd kategori','kd penerbit','judul','jumlah','pengarang','thn terbit'];
        
-        return view('singleData_0292',['header'=>$header,'data'=>$buku]);
+        return view('buku_0292',['header'=>$header,'data'=>$buku]);
     }
 
     public function ms_detail_pinjam(){
